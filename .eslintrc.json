@@ -1,0 +1,85 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "extends": [
+        "airbnb-base",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "settings": {
+        "import/extensions": [
+            ".js",
+            ".jsx"
+        ],
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        }
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "endOfLine": "auto"
+            }
+        ],
+        "import/extensions": [
+            0
+        ],
+        "react/jsx-filename-extension": [
+            0
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "no-undef": "off",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "no-implicit-coercion": [
+            "error",
+            {
+                "boolean": true,
+                "number": true,
+                "string": true,
+                "allow": []
+            }
+        ],
+        "react/prop-types": "off",
+        "semi": [
+            2,
+            "always"
+        ],
+        "quotes": [
+            2,
+            "double"
+        ]
+    },
+    "ignorePatterns": [
+        "/dist/*",
+        "/coverage/*",
+        "/lib/*",
+        "/openzeppelin/"
+    ]
+}

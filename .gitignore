@@ -1,0 +1,17 @@
+config/config.json
+node_modules
+dist
+build
+artifacts
+/.debugger
+/.deps
+.local
+uniswapAddress.txt
+cache
+flat
+.vscode/
+.openzeppelin/
+
+coverage
+/typechain
+/.env
